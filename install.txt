@@ -1,0 +1,17 @@
+1) Edit config.php and set mysql variables. Create a "./cache" folder inside project root and make it writable.
+2) Then navigate to /install
+   a) put your email address and submit the form.
+   b) if the installation went well you will have a username: admin and pwd:admin123
+3) login into admin
+4) You will find the tracking code in admin dashboard
+	example:
+	<script type="text/javascript" src="http://localhost/analytics/api/js/va-api.min.js"></script>
+	<script type="text/javascript">
+	try {
+	  va2.record({
+	     trackingServer: "http://localhost/analytics"
+     });
+	} catch(err) {}
+	</script>
+5) put the tracking codes into <head> block of the desired webpage.
+6) You can view the logs in admin panel /logs
